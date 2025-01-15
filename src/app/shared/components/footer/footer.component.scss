@@ -1,0 +1,13 @@
+@use "../../../styles/variables" as *;
+@use "../../../styles/mixins" as *;
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: $mine-shaft;
+  font-weight: $fw-500;
+  color: $silver-chalice;
+  font-size: px-rem($xs-font);
+}

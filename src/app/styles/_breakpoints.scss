@@ -1,0 +1,14 @@
+$min: 320px;
+$xxs: 480px;
+$xs: 768px;
+$md: 1024px;
+$lg: 1280px;
+$xl: 1440px;
+$xxl: 1920px;
+
+$for-extra-small-mobile: $min $xxs;
+$for-small-tablet: $xxs $xs;
+$for-tablet: $xs $md;
+$for-desktop: $md $lg;
+$for-large-desktop: $lg $xl;
+$for-extra-large-desktop: $xl $xxl;

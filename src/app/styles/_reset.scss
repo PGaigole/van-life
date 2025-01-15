@@ -1,0 +1,93 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-inter;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-size: px-rem($base-font);
+  background-color: $background;
+  color: $chinese-black;
+}
+
+h1 {
+  font-size: px-rem($h1-font);
+  font-weight: $fw-800;
+}
+
+h2 {
+  font-size: px-rem($h2-font);
+  font-weight: $fw-700;
+}
+
+h3 {
+  font-size: px-rem($h3-font);
+  font-weight: $fw-700;
+}
+
+h4 {
+  font-size: px-rem($h4-font);
+  font-weight: $fw-700;
+}
+
+h6 {
+  font-size: px-rem($h6-font);
+  font-weight: $fw-600;
+}
+
+p {
+  font-size: px-rem($base-font);
+  font-weight: $fw-500;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+small {
+  font-size: $xs-font;
+}
+
+input {
+  font-size: $base-font;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+main:has(> .login-container),
+main:has(> .not-found-container) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#back-navigation {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: underline;
+  color: $gray;
+  text-underline-offset: 5px;
+}

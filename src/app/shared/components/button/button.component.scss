@@ -1,0 +1,22 @@
+@use "../../../styles/variables" as *;
+@use "../../../styles/mixins" as *;
+
+.btn {
+  font-weight: $fw-700;
+  font-size: px-rem($base-font);
+  border: 0;
+  border-radius: 5px;
+  padding: 15px;
+  color: $white;
+  width: 100%;
+  cursor: pointer;
+  &-primary {
+    background-color: $primary;
+  }
+  &-black {
+    background-color: $chinese-black;
+  }
+  &:disabled {
+    opacity: 0.5;
+  }
+}

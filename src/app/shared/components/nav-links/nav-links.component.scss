@@ -1,0 +1,21 @@
+@use "../../../styles/variables" as *;
+
+nav {
+  ul {
+    display: flex;
+    gap: 20px;
+    text-underline-offset: 5px;
+    font-weight: $fw-600;
+    > a {
+      color: $tundora;
+      line-height: 22.92px;
+      display: flex;
+      align-items: center;
+      &:hover,
+      &.active {
+        color: $chinese-black;
+        text-decoration: underline;
+      }
+    }
+  }
+}
