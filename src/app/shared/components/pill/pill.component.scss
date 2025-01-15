@@ -1,0 +1,50 @@
+@use "../../../styles/variables" as *;
+
+.pill {
+  color: $tundora;
+  width: fit-content;
+  border: none;
+  border-radius: 5px;
+  font-size: $base-font;
+  font-weight: $fw-500;
+  background-color: $secondary;
+  padding: 10px 25px;
+  cursor: pointer;
+  &:hover {
+    .pill-simple {
+      background-color: $teracotta;
+    }
+  }
+  &-simple {
+    &.selected {
+      background-color: $teracotta;
+    }
+    &:hover {
+      background-color: $teracotta;
+      color: $background;
+    }
+  }
+  &-luxury {
+    &.selected {
+      background-color: $chinese-black;
+    }
+    &:hover {
+      background-color: $chinese-black;
+      color: $background;
+    }
+  }
+  &-rugged {
+    &.selected {
+      background-color: $eden;
+    }
+    &:hover {
+      background-color: $eden;
+      color: $background;
+    }
+  }
+  &.selected {
+    font-weight: $fw-600;
+    color: $background;
+    cursor: default;
+  }
+}

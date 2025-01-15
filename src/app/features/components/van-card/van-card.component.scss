@@ -1,0 +1,23 @@
+@use "../../../styles/variables" as *;
+
+.vans-card {
+  cursor: pointer;
+  > img {
+    max-width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    aspect-ratio: 1;
+  }
+  .vans-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    .van-name {
+      font-size: $h6-font;
+      margin-bottom: 10px;
+    }
+    .price-details {
+      text-align: right;
+    }
+  }
+}

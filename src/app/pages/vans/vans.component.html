@@ -1,1 +1,13 @@
-<p>vans works!</p>
+<section class="vans-container">
+  <div class="container">
+    <h2>Explore our van options</h2>
+    <section class="filter-section">
+      <!-- <Filter /> -->
+    </section>
+    <div class="vans-cards">
+      <ng-container *ngFor="let van of vans.vans"
+        ><app-van-card [van]="van"></app-van-card
+      ></ng-container>
+    </div>
+  </div>
+</section>
