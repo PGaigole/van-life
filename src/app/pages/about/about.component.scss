@@ -1,0 +1,32 @@
+@use "../../styles/variables" as *;
+
+.about-container {
+  img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 2.33;
+  }
+  .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .cta-section {
+      background-color: $primary-dark;
+      border-radius: 5px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      app-button {
+        width: fit-content;
+      }
+    }
+  }
+}
