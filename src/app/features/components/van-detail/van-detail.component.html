@@ -1,0 +1,20 @@
+<section class="van-detail-container">
+  <div class="container">
+    <a id="back-navigation" href="/vans">
+      <i class="fa-solid fa-arrow-left"></i>Back to vans
+    </a>
+    <img [src]="vanDetail.imageUrl" [alt]="vanDetail.name" />
+    <section class="van-details-section">
+      <app-pill [type]="vanDetail.type" [selected]="true">{{
+        vanType
+      }}</app-pill>
+      <h2>{{ vanDetail.name }}</h2>
+      <h3>
+        {{ vanDetail.price }}
+        <span>/day</span>
+      </h3>
+      <p>{{ vanDetail.description }}</p>
+      <app-button type="primary">Rent this van</app-button>
+    </section>
+  </div>
+</section>

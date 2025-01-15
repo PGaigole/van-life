@@ -1,9 +1,8 @@
-<section class="vans-card">
+<section class="vans-card" (click)="goToVanDetail()">
   <img [src]="van.imageUrl" alt="van image" />
   <div class="vans-details">
     <div>
       <h6 class="van-name">{{ van.name }}</h6>
-      <!-- <Pill type="{van.type}" selected="{true}"> {vanType} </Pill> -->
       <app-pill [type]="van.type" [selected]="true">{{ vanType }}</app-pill>
     </div>
     <div class="price-details">

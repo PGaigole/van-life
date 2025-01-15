@@ -8,6 +8,10 @@ export interface Van {
   type: string;
 }
 
+export interface VanResponse {
+  vans: Van;
+}
+
 export interface Vans {
   vans: Van[];
 }

@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Van } from '../../../models/van.model';
 import { PillComponent } from '../../../shared/components/pill/pill.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-van-card',
@@ -21,7 +22,13 @@ export class VanCardComponent {
   };
   vanType: string = '';
 
+  constructor(private router: Router) {}
+
   ngOnInit() {
     this.vanType = this.van.type[0].toUpperCase() + this.van.type.slice(1);
+  }
+
+  goToVanDetail() {
+    this.router.navigate([`/vans/${this.van.id}`]);
   }
 }
